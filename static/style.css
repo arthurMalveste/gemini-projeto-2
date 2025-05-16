@@ -1,0 +1,68 @@
+/* Estilo geral para o corpo (opcional) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Cartões de sugestão: visual bonito com roxo vibrante e cantos arredondados */
+  .sugestao-card {
+    background-color: #8787e3;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 4px 8px rgba(135, 135, 227, 0.2);
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .sugestao-card:hover {
+    background-color: #a5a5f7;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(135, 135, 227, 0.35);
+    cursor: pointer;
+  }
+  
+  
+  .sugestao-card span {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.9rem;
+  }
+  
+  /* Efeito hover: clareia o fundo e levanta o botão */
+  
+  /* Estilo leve para mensagens no chat */
+  .user-msg, .bot-msg {
+    max-width: 75%;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    animation: fadeInUp 0.3s ease-out;
+  }
+  
+  .user-msg {
+    align-self: flex-end;
+    background-color: #dbeafe;
+    color: #1e3a8a;
+    text-align: right;
+  }
+  
+  .bot-msg {
+    align-self: flex-start;
+    background-color: #fef9c3;
+    color: #78350f;
+    text-align: left;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

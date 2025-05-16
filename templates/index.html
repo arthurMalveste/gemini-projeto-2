@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot de Limpeza | Limpinha</title>
+
+  <!-- Ícone de limpeza (favicon simples) -->
+  <link rel="icon" type="image/png" href="https://img.icons8.com/fluency/48/clean.png" />
+
+  <!-- Fontes Google (Sans + Serif) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Estilos personalizados (opcional, externo em styles.css) -->
+  <link rel="stylesheet" href="/static/style.css" />
+
+</head>
+
+<body class="bg-blue-50 min-h-screen flex flex-col font-['Roboto'] text-gray-700">
+
+  <!-- 🌟 Cabeçalho -->
+  <header class="bg-white shadow-md p-4 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <img src="https://img.icons8.com/fluency/48/clean.png" alt="Ícone de limpeza" class="w-8 h-8" />
+      <h1 class="text-2xl font-semibold text-blue-700 font-['Playfair Display']">Limpinha - Chatbot de Limpeza</h1>
+    </div>
+  </header>
+
+  <!-- 🗨️ Área principal do chat -->
+  <main class="flex-1 flex flex-col items-center justify-center p-6">
+    <div class="w-full max-w-3xl bg-white rounded-lg shadow-md flex flex-col overflow-hidden">
+      
+      <!-- Área de mensagens -->
+      <div id="chat" class="flex-1 h-[500px] overflow-y-auto p-4 bg-gray-50 space-y-3 scroll-smooth">
+        <!-- Mensagens serão inseridas aqui dinamicamente pelo JS -->
+      </div>
+
+      <!-- Campo de entrada -->
+      <div class="flex items-center border-t border-gray-200 p-3 bg-gray-100">
+        <input id="mensagem" type="text" placeholder="Digite sua pergunta..." class="flex-1 p-3 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-300" />
+        <button onclick="enviarMensagem()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-r-lg transition duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 inline" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M22 2L11 13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6 px-4">
+        <button onclick="usarSugestao('Quais são as melhores dicas de faxina?')" class="sugestao-card ">
+          🧼<br><span class="text-sm font-medium">Dicas de faxina</span>
+        </button>
+      
+        <button onclick="usarSugestao('Como posso remover manchas de gordura da cozinha?')" class="sugestao-card ">
+          🧽<br><span class="text-sm font-medium">Remover manchas</span>
+        </button>
+      
+        <button onclick="usarSugestao('Monte uma rotina de limpeza para minha casa.')" class="sugestao-card ">
+          🧹<br><span class="text-sm font-medium">Rotina de limpeza</span>
+        </button>
+      
+        <button onclick="usarSugestao('O que as pessoas mais perguntam sobre limpeza?')" class="sugestao-card ">
+          🤔<br><span class="text-sm font-medium">Dúvidas comuns</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- 👣 Rodapé (opcional) -->
+  <footer class="text-center text-sm text-gray-500 p-4 mt-4">
+    © 2025 Limpinha. Feito com carinho e sabão 🧽
+  </footer>
+
+  <!-- Script de interação -->
+  <script src="/static/script.js"></script>
+</body>
+</html>
