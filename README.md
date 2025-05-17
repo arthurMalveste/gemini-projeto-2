@@ -2,7 +2,8 @@
 
 > **Uma aliada virtual para quem cuida da casa. Feita com carinho, sabão e tecnologia.**
 
-![QR Code do Projeto](docs/qrcode.png)
+![image](https://github.com/user-attachments/assets/766cb05b-cadd-493a-874e-e3bb7e526add)
+
 
 ---
 
@@ -29,21 +30,23 @@ Este projeto nasceu de uma **competição de chatbots** com o propósito de caus
 
 > Este projeto originalmente **permitia agendar faxinas diretamente no Google Agenda** por voz ou texto.
 
-Entretanto, por limitações de tempo e a exigência de **verificação do Google para apps públicos**, a funcionalidade foi **temporariamente removida desta versão**. Uma atualização próxima poderá reativar esse recurso.
-
-📺 Em breve: vídeo de demonstração do agendamento via Google Agenda
+Entretanto, por limitações da exigência de **verificação do Google para apps públicos**, a funcionalidade foi **temporariamente removida desta versão**. Uma atualização próxima poderá reativar esse recurso. Infelismente a previsão é de alguns dias úteis, ou seja não pode ser implementado ainda nessa versão
 
 ---
 
-## 🖼️ Interface visual
+## 🖼️ Capturas
 
-Abaixo, algumas imagens reais da interface do projeto:
+Abaixo, algumas imagens reais do projeto atual e também da funcionalidade do google caledar
 
-| Página inicial                           | Sugestões inteligentes                    |
-|------------------------------------------|--------------------------------------------|
-| ![Tela Inicial](docs/tela_inicial.png)   | ![Sugestões](docs/sugestoes.png)           |
+| Captura do Projeto                         
+|------------------------------------------
+| ![image](https://github.com/user-attachments/assets/e993ef3c-f1bf-4d37-8e40-b474f3dd3f2a)
 
-> As imagens são apenas exemplos, acesse o link real para testar.
+
+| Captura do meu google calendar e do meu terminal                          
+|------------------------------------------
+| ![image](https://github.com/user-attachments/assets/f01b11b9-28d3-4ba4-8150-b61b90e94641)
+
 
 ---
 
@@ -51,7 +54,7 @@ Abaixo, algumas imagens reais da interface do projeto:
 
 Você pode testar a Limpinha diretamente no navegador pelo link abaixo:
 
-🔗 **https://limpinha.onrender.com**  
+🔗 **https://limpinha-assistente-virtual.onrender.com/**  
 _(ou escaneie o QR Code no topo deste documento)_
 
 ---
@@ -61,7 +64,7 @@ _(ou escaneie o QR Code no topo deste documento)_
 ### 🔧 Pré-requisitos
 
 - Python 3.9+
-- Uma chave da API do [Gemini IA Studio](https://makersuite.google.com/app)
+- Uma chave da API do Gemini
 - Git
 
 ---
@@ -106,10 +109,7 @@ python main.py
 
 ## ❤️ Feito com carinho
 
-Criado por [Seu Nome ou Equipe], com dedicação para valorizar quem cuida da casa com tanta responsabilidade.
+Criado por Arthur Malveste, com dedicação para valorizar quem cuida da casa com tanta responsabilidade.
 
 ---
 
-## 📜 Licença
-
-Este projeto está sob a licença MIT – veja o arquivo [LICENSE](LICENSE) para detalhes.
