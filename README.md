@@ -18,6 +18,7 @@ Este projeto nasceu de uma **competição de chatbots** com o propósito de caus
 ## ✨ Funcionalidades
 
 - 💬 Conversa com linguagem **simples, empática e bem-humorada**
+- 💬 Botões interativos para preguntas pré selecionadas
 - 🧽 **Dicas de limpeza** com produtos caseiros ou comerciais
 - 📅 **Sugestões de rotina doméstica** e cronogramas de faxina
 - 📚 **Respostas rápidas para dúvidas comuns sobre o lar**
