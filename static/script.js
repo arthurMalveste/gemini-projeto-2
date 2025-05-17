@@ -74,4 +74,39 @@ function enviarMensagem() {
     input.value = texto;
     enviarMensagem();
   }
-    
+
+  // Função de reconhecimento de voz
+  function gravarAudio() {
+    const reconhecimento = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+    reconhecimento.lang = "pt-BR";
+    reconhecimento.interimResults = true;
+    reconhecimento.continuous = false;
+  
+    let transcricaoFinal = "";
+  
+    reconhecimento.onresult = (event) => {
+      let transcricaoIntermediaria = "";
+      for (let i = event.resultIndex; i < event.results.length; ++i) {
+        const transcricao = event.results[i][0].transcript;
+        if (event.results[i].isFinal) {
+          transcricaoFinal += transcricao + " ";
+        } else {
+          transcricaoIntermediaria += transcricao;
+        }
+      }
+      document.getElementById("mensagem").value = transcricaoFinal + transcricaoIntermediaria;
+    };
+  
+    reconhecimento.onerror = (event) => {
+      alert("Erro no reconhecimento de voz: " + event.error);
+    };
+  
+    reconhecimento.onend = () => {
+      if (transcricaoFinal.trim()) {
+        enviarMensagem();
+      }
+    };
+  
+    reconhecimento.start();
+  }
+  
