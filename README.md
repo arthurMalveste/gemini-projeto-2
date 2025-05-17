@@ -1,35 +1,62 @@
-# 🧼 Limpinha – Sua Assistente Virtual de Tarefas Domésticas
+# 🧼 Limpinha – Chatbot para Diaristas e Tarefas Domésticas
 
-**Limpinha** é um chatbot inteligente e simpático, criado para auxiliar **donas de casa e diaristas** com dicas práticas de limpeza, organização da casa e pequenas tarefas do dia a dia.  
+> **Uma aliada virtual para quem cuida da casa. Feita com carinho, sabão e tecnologia.**
 
-Ela fala como uma amiga de confiança, sabe como tirar gordura do fogão, mancha de mofo da parede ou até montar um cronograma de faxina da semana.
+![QR Code do Projeto](docs/qrcode.png)
 
-> 💬 Desenvolvido como parte de uma **competição de chatbots**, com foco em utilidade prática, linguagem acessível e empatia no atendimento.
+---
+
+**Limpinha** é uma assistente virtual criada especialmente para atender **donas de casa, diaristas, aposentadas e pessoas que lidam com a rotina doméstica**, muitas vezes invisibilizadas pela tecnologia tradicional.
+
+Ela traz leveza, bom humor e conhecimento prático para ajudar em tarefas do lar: desde como limpar manchas difíceis até montar uma rotina semanal de organização.
+
+Este projeto nasceu de uma **competição de chatbots** com o propósito de causar impacto real em comunidades que muitas vezes são deixadas de lado pelas inovações digitais.
 
 ---
 
 ## ✨ Funcionalidades
 
-- 🧠 **Respostas contextualizadas** com linguagem simples e carismática
-- 🧼 **Dicas de limpeza doméstica** (produtos, misturinhas, frequência ideal)
-- 📋 **Criação de rotinas e cronogramas**
-- 🤖 **Personalidade configurada como uma diarista experiente**
-- 💬 **Funcionamento por terminal (CLI) com plano de evolução para interface web**
+- 💬 Conversa com linguagem **simples, empática e bem-humorada**
+- 🧽 **Dicas de limpeza** com produtos caseiros ou comerciais
+- 📅 **Sugestões de rotina doméstica** e cronogramas de faxina
+- 📚 **Respostas rápidas para dúvidas comuns sobre o lar**
+- 🎙️ **Entrada por voz** com transcrição automática em tempo real
+- 📱 Interface **moderna e adaptada** para celulares e navegadores
 
 ---
 
-## 📆 Google Calendar (funcionalidade removida temporariamente)
+## ❌ Google Calendar (atualmente desativado)
 
-A Limpinha foi originalmente desenvolvida com integração ao **Google Calendar**, permitindo o agendamento de faxinas, lembretes e tarefas.
+> Este projeto originalmente **permitia agendar faxinas diretamente no Google Agenda** por voz ou texto.
 
-> ⚠️ **Como a API do Google exige verificação para uso público**, a funcionalidade foi **removida temporariamente nesta versão pública**.  
-> Você pode visualizar como ela funcionaria no vídeo abaixo.
+Entretanto, por limitações de tempo e a exigência de **verificação do Google para apps públicos**, a funcionalidade foi **temporariamente removida desta versão**. Uma atualização próxima poderá reativar esse recurso.
 
-📺 **[Clique aqui para assistir a demonstração (em breve)](https://www.youtube.com/watch?v=SEU_VIDEO_AQUI)**
+📺 Em breve: vídeo de demonstração do agendamento via Google Agenda
 
 ---
 
-## 🚀 Como executar localmente
+## 🖼️ Interface visual
+
+Abaixo, algumas imagens reais da interface do projeto:
+
+| Página inicial                           | Sugestões inteligentes                    |
+|------------------------------------------|--------------------------------------------|
+| ![Tela Inicial](docs/tela_inicial.png)   | ![Sugestões](docs/sugestoes.png)           |
+
+> As imagens são apenas exemplos, acesse o link real para testar.
+
+---
+
+## 🚀 Teste agora
+
+Você pode testar a Limpinha diretamente no navegador pelo link abaixo:
+
+🔗 **https://limpinha.onrender.com**  
+_(ou escaneie o QR Code no topo deste documento)_
+
+---
+
+## 🧪 Executar localmente (para desenvolvedores)
 
 ### 🔧 Pré-requisitos
 
@@ -42,20 +69,47 @@ A Limpinha foi originalmente desenvolvida com integração ao **Google Calendar*
 ### 📥 Clone o repositório
 
 ```bash
-git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
-cd NOME_DO_REPOSITORIO
+git clone https://github.com/seu-usuario/limpinha.git
+cd limpinha
+```
 
-### 🧪 Crie o ambiente virtual (opcional, mas recomendado)
+### 🧪 Crie o ambiente virtual (opcional)
+
+```bash
 python -m venv venv
-source venv/bin/activate   # macOS/Linux
-venv\Scripts\activate      # Windows
+source venv/bin/activate      # macOS/Linux
+venv\Scripts\activate         # Windows
+```
 
 ### 📦 Instale as dependências
+
+```bash
 pip install -r requirements.txt
+```
 
-### 🔐 Defina a chave da API do Gemini
-export GENAI_API_KEY="sua_chave_aqui"     # Linux/macOS
-set GENAI_API_KEY=sua_chave_aqui          # Windows
+### 🔐 Configure a chave da API (usando variável de ambiente)
 
-### ▶️ Execute o chatbot
+```bash
+export GENAI_API_KEY="sua_chave_aqui"       # macOS/Linux
+set GENAI_API_KEY=sua_chave_aqui            # Windows
+```
+
+---
+
+### ▶️ Inicie o servidor
+
+```bash
 python main.py
+```
+
+---
+
+## ❤️ Feito com carinho
+
+Criado por [Seu Nome ou Equipe], com dedicação para valorizar quem cuida da casa com tanta responsabilidade.
+
+---
+
+## 📜 Licença
+
+Este projeto está sob a licença MIT – veja o arquivo [LICENSE](LICENSE) para detalhes.
